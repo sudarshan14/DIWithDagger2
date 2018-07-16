@@ -1,17 +1,17 @@
 package sudarshan.bhatt.diwithdagger2.mvpWithStaticData;
 
-public class QuotePresenterImpl implements QuotePresenter, GetQuoteInteractor.OnFinishedListener {
+public class QuotePresenterImpl implements QuoteContract.QuotePresenter, QuoteContract.GetQuoteInteractor.OnFinishedListener {
 
 
     /*
      This class implements the Presenter and nested interface from GetQuoteInteractor.
      Moreover it instantiates the QuoteView and GetQuoteInteractor interfaces (View and Model respectively).
      */
-    private QuoteView quoteView;
-    private GetQuoteInteractor getQuoteInteractor;
+    private QuoteContract.QuoteView quoteView;
+    private QuoteContract.GetQuoteInteractor getQuoteInteractor;
 
 
-    public QuotePresenterImpl(QuoteView quoteView, GetQuoteInteractor getQuoteInteractor) {
+    public QuotePresenterImpl(QuoteContract.QuoteView quoteView, QuoteContract.GetQuoteInteractor getQuoteInteractor) {
 
         this.quoteView = quoteView;
         this.getQuoteInteractor = getQuoteInteractor;

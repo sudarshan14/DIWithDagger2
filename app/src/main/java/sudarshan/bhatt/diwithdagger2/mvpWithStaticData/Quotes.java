@@ -9,11 +9,11 @@ import android.widget.TextView;
 
 import sudarshan.bhatt.diwithdagger2.R;
 
-public class Quotes extends AppCompatActivity implements QuoteView {
+public class Quotes extends AppCompatActivity implements QuoteContract.QuoteView {
     private TextView textView;
     private Button button;
     private ProgressBar progressBar;
-    QuotePresenter quotePresenter;
+    QuoteContract.QuotePresenter quotePresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

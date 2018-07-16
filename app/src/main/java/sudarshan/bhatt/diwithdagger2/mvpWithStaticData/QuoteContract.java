@@ -22,7 +22,7 @@ public interface QuoteContract {
 
         }
 
-        void getNextQuotes(sudarshan.bhatt.diwithdagger2.mvpWithStaticData.GetQuoteInteractor.OnFinishedListener onFinishedListener);
+        void getNextQuotes(GetQuoteInteractor.OnFinishedListener onFinishedListener);
     }
 
     interface QuotePresenter {

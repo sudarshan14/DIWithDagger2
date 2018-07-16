@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Handler;
 
-public class GetQuoteInteractorImpl implements GetQuoteInteractor {
+public class GetQuoteInteractorImpl implements QuoteContract.GetQuoteInteractor {
 
     private List<String> arrayList = Arrays.asList(
             "Be yourself. everyone else is already taken.",
